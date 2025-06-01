@@ -1,0 +1,287 @@
+header img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-list li {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+
+nav a {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #b3926a
+}
+
+.nav-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #f9f7f4;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05) ;
+  padding: 1rem 0;
+  border-top: 1px solid #e0e0e0;
+}
+body{
+  background-color: #fefaf6 ;
+  font-family: "Lato", "Playfair Display";
+  margin: 0;
+  padding: 0 5%;
+}
+main{
+  margin: 3rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+h1{
+  font-size: 3rem;
+}
+.hero {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6)),
+              url('/mnt/data/MGFullWidth.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #b3926a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a07a52;
+}
+
+h2 {
+  font-size: 3rem;
+}
+section{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.full-width article{
+  max-width: 100%;
+  text-align: center;
+}
+.signature-card {
+  background: 
+    linear-gradient(to bottom, rgba(255,255,255,0.88), rgba(255,255,255,0.95)),
+    url('mg-Logos/signature.png') no-repeat center center/cover;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signature-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  max-width: 90%;
+  z-index: 2;
+}
+
+.signature-card h2,
+.signature-card p,
+.signature-card a {
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+.custom-ring-card {
+  background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0)),
+    url('mg-Logos/dreamring.png') no-repeat center center/cover;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-ring-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.column-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.column-link:hover {
+  text-decoration: underline;
+  color: #b3926a
+}
+
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.three-columns article {
+  background-color: #fefefe; /* optional for visual structure */
+  padding: 1rem;
+  border: 1px solid #ddd;    /* optional for clarity */
+}
+.three-columns article p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: #b3926a;
+}
+.visit-card {
+  background: 
+    linear-gradient(to bottom, rgba(255,255,255,0.88), rgba(255,255,255,0.95)),
+    url('mg-Logos/signature.png') no-repeat center center/cover;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.visit-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Mobile stacking */
+@media (max-width: 768px) {
+  .three-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+footer{
+  background-color: #1c1c1c ;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-logo img{
+  height: 80px;
+  width: auto;
+  display: inline-block ;
+}
+footer div{
+  flex: 1;
+}
+.copyright{
+  color: white;
+  font-family: "Playfair Display", sans-serif;
+  font-size: smaller;
+}
+.footer-logo , .copyright{
+  flex: 1;
+  text-align: center;
+}
